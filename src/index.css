@@ -11,3 +11,94 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --bg-color: #1E1E1E;
+  --primary:  #202020;
+  --secundary: #353535;
+  --primary-color:  #FFFFFF;
+
+
+}
+
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: center;
+  background-color: var(--bg-color);
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 10rem;
+  padding: 20px;
+  margin: 30px;
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+.main-title {
+  text-transform: uppercase;
+  text-align:left;
+  color: var(--primary-color);
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 5px;
+}
+
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+}
+
+.inputBox label{
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.inputBox input {
+  background-color: var(--secundary);
+  border-radius: 5px;
+  outline: 0;
+}
+
+ button {
+  width: fit-content;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  background-color: #36CE7C;
+  border-radius: 5px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+
+.App .second-title{
+  width: 50%;
+  text-transform: uppercase;
+  text-align:left;
+  color: var(--primary-color);
+  
+}
+  
+
+.component-inicial {
+  background: chocolate;
+  width: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
